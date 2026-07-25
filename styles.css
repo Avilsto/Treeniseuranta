@@ -238,3 +238,96 @@ input:focus, button:focus { outline: 2px solid #C9A24B; outline-offset: 1px; }
   margin-bottom: 4px;
 }
 .history-ex-sets { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.ex-note {
+  font-size: 11px;
+  color: #8FA3B0;
+  font-style: italic;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* Kehitys-välilehti */
+.trend-badge {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 3px 9px;
+  border-radius: 3px;
+  margin: 6px 0 10px;
+}
+.trend-up { background: rgba(201, 162, 75, 0.12); color: #C9A24B; }
+.trend-flat { background: rgba(143, 163, 176, 0.12); color: #8FA3B0; }
+.trend-down { background: rgba(176, 106, 92, 0.15); color: #D08A7A; }
+.trend-single { background: rgba(122, 135, 148, 0.12); color: #7A8794; }
+.trend-history {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.trend-arrow { color: #5C6672; font-size: 12px; }
+
+/* Muokkaa-välilehti */
+.edit-card { display: flex; flex-direction: column; gap: 8px; }
+.edit-row { display: flex; gap: 8px; align-items: center; }
+.edit-input {
+  background: #14171B;
+  border: 1px solid #2A313A;
+  border-radius: 3px;
+  color: #E7E9EC;
+  padding: 9px 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  width: 100%;
+}
+.edit-name-input { flex: 1; font-size: 15px; }
+.edit-note-input { font-size: 12px; color: #A6B0BA; }
+.edit-nums-row { display: flex; gap: 8px; }
+.edit-field { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.edit-field-label {
+  font-size: 10px;
+  color: #5C6672;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.edit-move-row { display: flex; gap: 8px; justify-content: flex-end; }
+.move-btn {
+  background: #14171B;
+  border: 1px solid #2A313A;
+  color: #A6B0BA;
+  border-radius: 3px;
+  width: 40px;
+  height: 34px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.move-btn:disabled { opacity: 0.3; }
+.add-ex-btn {
+  background: transparent;
+  border: 1px dashed #3A4552;
+  color: #A6B0BA;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.edit-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+.reset-btn {
+  background: transparent;
+  border: 1px solid #3A2A2A;
+  color: #B06A5C;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.edit-save-btn { position: static; width: 100%; }
+.tab-row { overflow-x: auto; }
+.tab-btn { white-space: nowrap; padding: 10px 6px; font-size: 12px; }
