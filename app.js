@@ -10,16 +10,30 @@ Päivitys 10.10.2026 (ohjelmaversio 2) — ylävartalon volyymi, vaihe 1:
 - Rintatuettu t-kulmasoutu: 2 -> 3 sarjaa
 - UUSI: Rintaflye laitteessa (pec deck) 2 x 10-15 (Ylä 2)
 - Jalat ennallaan. Kädet vaihe 2:ssa, jos kyynärpää pysyy rauhallisena.
+Päivitys 7.11.2026 (ohjelmaversio 3) — olkapääpainotus:
+- Vipunostot laitteessa: Ylä 1:n ensimmäiseksi, toistot 8-12 -> 10-20
+- UUSI: Reverse pec deck 3 x 12-20 (Ylä 1 ja Ylä 2)
+- UUSI: Vipunostot taljassa 3 x 10-20 (Ylä 2)
+- Sivuolkapää 3 -> 6 sarjaa/vko, takaolkapää 0 -> 6 sarjaa/vko
+Päivitys 7.11.2026 (ohjelmaversio 4) — kokonaisuuden viilaus:
+- Rintatuettu soutu -> Istuva taljasoutu leveällä otteella (Ylä 1)
+- T-kulmasoutu -> Yhden käden käsipainosoutu (Ylä 2)
+- Hyperextension -> RDL 2 x 6-10 (Ala 1)
+- Lantionnosto -> Abduktori 3 x 10-15 (Ala 2)
+- Pushdown 2 -> 3 sarjaa
+- Pohkeet alkuun (Ala 1 ja 2), vatsat alkuun (Ala 2)
+- Vipunostot + reverse pec deck kaksoissarjana
 --------------------------------------------------------- */
 const DEFAULT_PROGRAM = {
 yla1: {
 label: "Ylä 1",
 exercises: [
+{ id: "y1-5", name: "Vipunostot sivuille laitteessa", sets: 3, repMin: 10, repMax: 20, note: "Kaksoissarja reverse pec deckin kanssa — vuorotellen" },
+{ id: "y1-8", name: "Reverse pec deck (takaolkapää)", sets: 3, repMin: 12, repMax: 20, note: "Kaksoissarja vipunostojen kanssa — vuorotellen" },
 { id: "y1-1", name: "Rintapunnerrus istuen laitteessa", sets: 3, repMin: 6, repMax: 8 },
 { id: "y1-2", name: "Ylätalja kapealla otteella", sets: 3, repMin: 6, repMax: 8 },
 { id: "y1-3", name: "Vinopenkkipunnerrus laitteessa", sets: 2, repMin: 6, repMax: 8 },
-{ id: "y1-4", name: "Rintatuettu soutu laitteessa leveällä otteella", sets: 3, repMin: 6, repMax: 10 },
-{ id: "y1-5", name: "Vipunostot sivuille laitteessa", sets: 3, repMin: 8, repMax: 12 },
+{ id: "y1-9", name: "Istuva taljasoutu leveällä otteella", sets: 3, repMin: 6, repMax: 10, note: "Yläselkä, kyynärpäät ulos. Varalla: Smith-soutu" },
 { id: "y1-6", name: "Scott hauiskääntö käsipainolla", sets: 3, repMin: 8, repMax: 12 },
 { id: "y1-7", name: "Pään takaa punnerrus taljassa narulla", sets: 3, repMin: 8, repMax: 12 },
 ],
@@ -27,11 +41,11 @@ exercises: [
 ala1: {
 label: "Ala 1",
 exercises: [
+{ id: "a1-5", name: "Pohkeet seisten laitteessa", sets: 3, repMin: 8, repMax: 10 },
 { id: "a1-1", name: "Reisikoukistus maaten", sets: 3, repMin: 8, repMax: 12 },
 { id: "a1-2", name: "Jalkaprässi jalat alhaalla", sets: 3, repMin: 6, repMax: 8 },
-{ id: "a1-3", name: "Hyperextension (takareisille)", sets: 2, repMin: 8, repMax: 12 },
+{ id: "a1-6", name: "RDL (tanko tai Smith)", sets: 2, repMin: 6, repMax: 10, note: "1–2 toistoa varaa, remmit. 3. sarja jos palautuminen riittää" },
 { id: "a1-4", name: "1 Jalan reisiojennus", sets: 2, repMin: 8, repMax: 12 },
-{ id: "a1-5", name: "Pohkeet seisten laitteessa", sets: 3, repMin: 8, repMax: 10 },
 ],
 },
 yla2: {
@@ -40,21 +54,23 @@ exercises: [
 { id: "y2-1", name: "Pystypunnerrus istuen laitteessa", sets: 2, repMin: 6, repMax: 8 },
 { id: "y2-2", name: "Leuanveto vastaotteella", sets: 2, repMin: 6, repMax: 10, note: "Laite tai lisäpainolla — valitse kerta kohtaisesti kyynärpään mukaan" },
 { id: "y2-3", name: "Dippi", sets: 2, repMin: 6, repMax: 10, note: "Laite tai lisäpainolla — valitse kerta kohtaisesti kyynärpään mukaan" },
-{ id: "y2-4", name: "Rintatuettu t-kulmasoutu (yläselkä)", sets: 3, repMin: 6, repMax: 10 },
+{ id: "y2-10", name: "Yhden käden käsipainosoutu penkillä", sets: 3, repMin: 8, repMax: 12, note: "Per puoli, remmit" },
 { id: "y2-7", name: "Rintaflye laitteessa (pec deck)", sets: 2, repMin: 10, repMax: 15 },
+{ id: "y2-8", name: "Vipunostot taljassa", sets: 3, repMin: 10, repMax: 20, note: "Talja tai laite. Kaksoissarja reverse pec deckin kanssa" },
+{ id: "y2-9", name: "Reverse pec deck (takaolkapää)", sets: 3, repMin: 12, repMax: 20, note: "Kaksoissarja vipunostojen kanssa — vuorotellen" },
 { id: "y2-5", name: "Hammerkääntö narulla taljassa", sets: 3, repMin: 8, repMax: 12 },
-{ id: "y2-6", name: "Pushdown taljassa tangolla", sets: 2, repMin: 8, repMax: 12 },
+{ id: "y2-6", name: "Pushdown taljassa tangolla", sets: 3, repMin: 8, repMax: 12 },
 ],
 },
 ala2: {
 label: "Ala 2",
 exercises: [
+{ id: "a2-6", name: "Vatsarutistus taljassa", sets: 3, repMin: 8, repMax: 12 },
+{ id: "a2-5", name: "Pohkeet seisten laitteessa", sets: 3, repMin: 6, repMax: 8 },
 { id: "a2-1", name: "Reisikoukistus istuen", sets: 3, repMin: 8, repMax: 12 },
 { id: "a2-2", name: "Hack kyykky", sets: 3, repMin: 6, repMax: 8 },
-{ id: "a2-3", name: "Lantionnosto laitteessa", sets: 2, repMin: 6, repMax: 8 },
+{ id: "a2-7", name: "Abduktori (lonkan loitonnus)", sets: 3, repMin: 10, repMax: 15, note: "Ylävartalo hieman eteen, hallittu lasku" },
 { id: "a2-4", name: "Reisiojennus laitteessa", sets: 2, repMin: 8, repMax: 12 },
-{ id: "a2-5", name: "Pohkeet seisten laitteessa", sets: 3, repMin: 6, repMax: 8 },
-{ id: "a2-6", name: "Vatsarutistus taljassa", sets: 3, repMin: 8, repMax: 12 },
 ],
 },
 };
@@ -63,14 +79,27 @@ const DAY_ORDER = ["yla1", "ala1", "yla2", "ala2"];
 const LOG_KEY = "training-log-v1";
 const PROGRAM_KEY = "custom-program-v1";
 const PROGRAM_VERSION_KEY = "program-version";
-const PROGRAM_VERSION = 2;
-const MIGRATED_DAYS = { 2: ["yla1", "yla2"] };
+const PROGRAM_VERSION = 4;
+const MIGRATED_DAYS = { 2: ["yla1", "yla2"], 3: ["yla1", "yla2"], 4: ["yla1", "ala1", "yla2", "ala2"] };
+/* Oletusohjelmasta poistetut liikkeet — ei siirretä omiin liikkeisiin (historia säilyy) */
+const REMOVED_IDS = { 4: ["y1-4", "y2-4", "a1-3", "a2-3"] };
+/* Kentät, jotka pakotetaan oletuksesta tietyssä versiossa (sarjat pakotetaan aina) */
+const FORCED_FIELDS = { 3: { "y1-5": ["repMin", "repMax"] }, 4: { "y1-5": ["note"], "y1-8": ["note"], "y2-8": ["note"], "y2-9": ["note"] } };
 
 const todayStr = () =>
 new Date().toLocaleDateString("fi-FI", { day: "2-digit", month: "2-digit", year: "numeric" });
 
 const genId = () => `custom-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
 const roundWeight = (w) => Math.round(w / 2.5) * 2.5;
+/* Paino desimaaleilla: hyväksyy sekä pilkun että pisteen (80,5 tai 80.5) */
+const toNum = (v) => Number(String(v ?? "").replace(",", ".")) || 0;
+const fmtW = (v) => (v === "" || v === undefined || v === null ? "" : String(v).replace(".", ","));
+function cleanWeight(v) {
+let t = String(v).replace(",", ".").replace(/[^0-9.]/g, "");
+const i = t.indexOf(".");
+if (i !== -1) t = t.slice(0, i + 1) + t.slice(i + 1).replace(/\./g, "");
+return t;
+}
 
 /* ---------------------------------------------------------
 OHJELMAN TALLENNUS (muokattava)
@@ -109,9 +138,13 @@ const defaults = DEFAULT_PROGRAM[dayKey].exercises;
 const defaultIds = new Set(defaults.map((ex) => ex.id));
 const merged = defaults.map((def) => {
 const own = byId[def.id];
-return own ? { ...def, ...own, sets: def.sets } : { ...def };
+if (!own) return { ...def };
+const forced = { sets: def.sets };
+((FORCED_FIELDS[v] || {})[def.id] || []).forEach((f) => (forced[f] = def[f]));
+return { ...def, ...own, ...forced };
 });
-custom.filter((ex) => !defaultIds.has(ex.id)).forEach((ex) => merged.push(ex));
+const removed = new Set(REMOVED_IDS[v] || []);
+custom.filter((ex) => !defaultIds.has(ex.id) && !removed.has(ex.id)).forEach((ex) => merged.push(ex));
 customProgram[dayKey] = {
 label: (customProgram[dayKey] && customProgram[dayKey].label) || DEFAULT_PROGRAM[dayKey].label,
 exercises: merged,
@@ -224,7 +257,7 @@ return sets.some((s) => Number(s.reps) > 0 && Number(s.reps) < ex.repMin);
 }
 
 function topWeightOf(sets) {
-return Math.max(...sets.map((s) => Number(s.weight) || 0));
+return Math.max(...sets.map((s) => toNum(s.weight)));
 }
 
 function suggestion(ex) {
@@ -240,7 +273,7 @@ const w = topWeightOf(newest);
 const newW = roundWeight(w * 1.05);
 return {
 type: "up",
-text: `Kaksi kertaa peräkkäin täynnä (${ex.repMax} toistoa) → nosta ${w}kg → ${newW}kg`,
+text: `Kaksi kertaa peräkkäin täynnä (${ex.repMax} toistoa) → nosta ${fmtW(w)}kg → ${fmtW(newW)}kg`,
 };
 }
 if (hitCeiling(newest, ex)) {
@@ -262,7 +295,7 @@ KEHITYS-TRENDI (viimeisimmät 3 kertaa per liike)
 function scoreOf(sets) {
 return Math.max(
 ...sets.map((s) => {
-const w = Number(s.weight) || 0;
+const w = toNum(s.weight);
 const r = Number(s.reps) || 0;
 return w * (1 + r / 30);
 })
@@ -273,7 +306,7 @@ function topSetOf(sets) {
 let best = sets[0];
 let bestScore = -1;
 sets.forEach((s) => {
-const w = Number(s.weight) || 0;
+const w = toNum(s.weight);
 const r = Number(s.reps) || 0;
 const sc = w * (1 + r / 30);
 if (sc > bestScore) {
@@ -403,31 +436,12 @@ day.exercises.forEach((ex) => {
 const card = el("section", "card");
 const head = el("div", "card-head");
 head.appendChild(el("h2", "ex-name", ex.name));
-head.appendChild(el("span", "rep-range", `${ex.sets} sarjaa · ${ex.repMin}-${ex.repMax} toistoa`));
-if (ex.note) head.appendChild(el("div", "ex-note", ex.note));
+head.appendChild(el("span", "rep-range", `${ex.sets} × ${ex.repMin}–${ex.repMax}`));
 card.appendChild(head);
 
+/* Yksinkertainen näkymä: edellisen kerran paino ja toistot näkyvät
+   harmaina kenttien sisällä (placeholder). Ei kommentteja eikä ehdotuksia. */
 const last = lastFor(ex.id);
-if (last) {
-const lastRow = el("div", "last-row");
-lastRow.appendChild(el("span", "last-label", `Viimeksi (${last.date}):`));
-const values = el("span", "last-values");
-last.sets.forEach((s) => {
-values.appendChild(el("span", "chip", `${s.weight || "–"}kg×${s.reps || "–"}`));
-});
-lastRow.appendChild(values);
-card.appendChild(lastRow);
-}
-
-const sug = suggestion(ex);
-if (sug) {
-const sugEl = el(
-"div",
-"suggestion" + (sug.type === "up" ? " up" : ""),
-(sug.type === "up" ? "▲ " : "› ") + sug.text
-);
-card.appendChild(sugEl);
-}
 
 const grid = el("div", "sets-grid");
 const headerRow = el("div", "sets-header-row");
@@ -445,13 +459,17 @@ const row = el("div", "set-row");
 row.appendChild(el("span", "set-index", String(idx + 1)));
 
 const weightInput = document.createElement("input");
-weightInput.type = "number";
+weightInput.type = "text";
 weightInput.inputMode = "decimal";
+weightInput.autocomplete = "off";
 weightInput.className = "set-input";
-weightInput.placeholder = last?.sets[idx]?.weight || "0";
-weightInput.value = s.weight;
+weightInput.placeholder = fmtW(last?.sets[idx]?.weight) || "–";
+weightInput.value = fmtW(s.weight);
 weightInput.oninput = (e) => {
-state.entries[ex.id][idx].weight = e.target.value;
+const cleaned = cleanWeight(e.target.value);
+const shown = fmtW(cleaned);
+if (e.target.value !== shown) e.target.value = shown;
+state.entries[ex.id][idx].weight = cleaned;
 updateSaveBtn();
 };
 row.appendChild(weightInput);
@@ -460,7 +478,7 @@ const repsInput = document.createElement("input");
 repsInput.type = "number";
 repsInput.inputMode = "numeric";
 repsInput.className = "set-input";
-repsInput.placeholder = last?.sets[idx]?.reps || "0";
+repsInput.placeholder = last?.sets[idx]?.reps || "–";
 repsInput.value = s.reps;
 repsInput.oninput = (e) => {
 state.entries[ex.id][idx].reps = e.target.value;
@@ -578,7 +596,7 @@ const historyRow = el("div", "trend-history");
 trend.points.forEach((p, i) => {
 const top = topSetOf(p.sets);
 if (i > 0) historyRow.appendChild(el("span", "trend-arrow", "→"));
-historyRow.appendChild(el("span", "chip", `${top.weight || "–"}kg×${top.reps || "–"}`));
+historyRow.appendChild(el("span", "chip", `${fmtW(top.weight) || "–"}kg×${top.reps || "–"}`));
 });
 card.appendChild(historyRow);
 
@@ -633,7 +651,7 @@ const row = el("div", "history-ex-row");
 row.appendChild(el("span", "history-ex-name", exName));
 const setsWrap = el("span", "history-ex-sets");
 sets.forEach((st) => {
-setsWrap.appendChild(el("span", "chip", `${st.weight || "–"}kg×${st.reps || "–"}`));
+setsWrap.appendChild(el("span", "chip", `${fmtW(st.weight) || "–"}kg×${st.reps || "–"}`));
 });
 row.appendChild(setsWrap);
 card.appendChild(row);
@@ -654,7 +672,7 @@ const main = el("main", "main");
 const intro = el(
 "p",
 "empty-text",
-"Muokkaa liikkeet, sarjat ja toistot suoraan täältä. Muutokset tallentuvat vain tähän puhelimeen."
+"Muokkaa liikkeet, sarjat ja toistot. Muutokset tallentuvat tähän puhelimeen."
 );
 intro.style.padding = "4px 2px 4px";
 intro.style.textAlign = "left";
@@ -723,15 +741,7 @@ numsRow.appendChild(repMaxWrap);
 
 card.appendChild(numsRow);
 
-const noteInput = document.createElement("input");
-noteInput.type = "text";
-noteInput.className = "edit-input edit-note-input";
-noteInput.placeholder = "Huomautus (valinnainen)";
-noteInput.value = ex.note || "";
-noteInput.oninput = (e) => {
-state.editExercises[idx].note = e.target.value;
-};
-card.appendChild(noteInput);
+
 
 const moveRow = el("div", "edit-move-row");
 const upBtn = el("button", "move-btn", "↑");
